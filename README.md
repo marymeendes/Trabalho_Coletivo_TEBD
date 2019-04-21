@@ -8,7 +8,11 @@ Algumas observações:
 -Cada representante do grupo deve commitar os XSD's do seu time dentro da pasta correspondente do grupo;
 
 -Para a votação:
-	-Para votar, o representante do Grupo deverá editar o arquivo "Votacao.txt", incrementando o valor de votos nos XSD's dos grupos que cada um dos integrantes do seu time votaram. Depois, deverá commitar as alterações neste repositório.
+	
+	-Para votar, o representante do Grupo deverá editar o arquivo "Votacao.txt", incrementando o valor de votos nos XSD's dos grupos que cada um dos integrantes do seu time votaram. Depois, deverá commitar as alterações neste repositório;
+	
 	-É proibido votar no XSD do próprio grupo;
+	
 	-Não existe voto de abstenção. é obrigatório a escolha de um XSD de algum grupo;
+	
 	-É permitido votar em apenas um **único** XSD.
