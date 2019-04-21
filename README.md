@@ -13,6 +13,6 @@ Algumas observações:
 	
 	-É proibido votar no XSD do próprio grupo;
 	
-	-Não existe voto de abstenção. é obrigatório a escolha de um XSD de algum grupo;
+	-Não existe voto de abstenção. É obrigatório a escolha de um XSD de algum grupo;
 	
-	-É permitido votar em apenas um **único** XSD.
+	-É permitido votar em apenas um único XSD.
