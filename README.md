@@ -9,7 +9,7 @@ Algumas observações:
 
 -Para a votação:
 	
-	-Para votar, o representante do Grupo deverá editar o arquivo "Votacao.txt", incrementando o valor de votos nos XSD's dos grupos que cada um dos integrantes do seu time votaram. Depois, deverá commitar as alterações neste repositório;
+	-Para votar, o representante do Grupo deverá editar o arquivo "Votacao.txt", incrementando o voto do seu grupo no XSD do grupo correspondente. Depois, deverá commitar as alterações neste repositório. No fim, teremos um total de 4 votos, referente ao grupo em si;
 	
 	-É proibido votar no XSD do próprio grupo;
 	
