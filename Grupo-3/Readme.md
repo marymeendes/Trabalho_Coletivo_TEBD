@@ -21,4 +21,4 @@ William Anderson
 Mariana
 
 
-Linguagens: Python e PHP
+Linguagens: Python e Go
