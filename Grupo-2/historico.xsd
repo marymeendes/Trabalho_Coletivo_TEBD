@@ -5,18 +5,15 @@ targetNamespace="https://www.w3schools.com"
 xmlns="https://www.w3schools.com"
 elementFormDefault="qualified">
 
-
 <xs:element name = "historico">
 	<xs:complexType>
 		<xs:sequence>
 			
 			<xs:element name = "universidade" minOccurs="1" maxOccurs="1">
 				<xs:complexType>
-					<xs:sequence>
-					
-					<xs:element name = "nome" type = "xs:string"/>
-					<xs:element name = "departamento" type = "xs:string"/>
-					
+					<xs:sequence>	
+						<xs:element name = "nome" type = "xs:string"/>
+						<xs:element name = "departamento" type = "xs:string"/>	
 					</xs:sequence>
 				</xs:complexType>	
 			</xs:element>
