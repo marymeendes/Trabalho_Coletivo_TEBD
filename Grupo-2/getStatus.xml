@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<requisicao>
+	<metodo>
+		<nome>consultaStatus</nome>
+		<parametros>
+			<parametro>
+				<nome>cpf</nome>
+				<valor>1234567810</valor>
+			</parametro>
+		</parametros>
+	</metodo>
+</requisicao>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<requisicao>
+	<metodo>
+		<nome>submeter</nome>
+		<parametros>
+			<parametro>
+				<nome>Boletim</nome>
+				<valor>String do XML</valor>
+			</parametro>
+		</parametros>
+	</metodo>
+</requisicao>
