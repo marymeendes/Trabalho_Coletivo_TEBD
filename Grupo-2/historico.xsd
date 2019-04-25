@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+
+
+<xs:element name = "historico">
+	<xs:complexType>
+		<xs:sequence>
+			
+			<xs:element name = "universidade" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+					
+					<xs:element name = "nome" type = "xs:string"/>
+					<xs:element name = "departamento" type = "xs:string"/>
+					
+					</xs:sequence>
+				</xs:complexType>	
+			</xs:element>
+			
+			<xs:element name="aluno" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name = "matricula" type = "xs:string"/>
+						<xs:element name = "nome" type = "xs:string"/>
+						<xs:element name = "cpf" type = "xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="periodo" minOccurs="1" maxOccurs="15">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name = "disciplina" minOccurs = "1" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name = "credito" type = "xs:int"/>
+									<xs:element name = "nota" type = "xs:string"/>
+									<xs:element name = "situacao" type = "xs:string"/>
+								</xs:sequence>
+								<xs:attribute name="nome" type = "xs:string"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name = "CR" type = "xs:float"/>
+					</xs:sequence>
+					
+				<xs:attribute name="id" type = "xs:string"/>
+				</xs:complexType>
+			</xs:element>
+
+		</xs:sequence>
+	<xs:attribute name = "autenticacao" type = "xs:string"/>
+	</xs:complexType>
+</xs:element>
+
+
+
+
+</xs:schema>
