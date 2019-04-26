@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<historico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <requisicao></requisicao>
+
+    <universidade>
+        <nome></nome>
+        <campus></campus>
+    </universidade>
+
+    <dadosaluno>
+        <nome></nome>
+        <matricula></matricula>
+        <cpf></cpf>
+        <curso></curso>
+        <codigocurso></codigocurso>
+        <anoingresso></anoingresso>
+        <cr></cr>
+    </dadosaluno>
+
+    <disciplinas>
+        <disciplina>
+            <periodo></periodo>
+            <codigo></codigo>
+            <credito></credito>
+            <nome></nome>
+            <nota></nota>
+            <situacao></situacao>
+        </disciplina>
+    </disciplinas>
+</historico>

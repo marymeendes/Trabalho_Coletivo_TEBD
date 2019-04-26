@@ -1,0 +1,82 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="historico">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="requisicao" type="xs:string"/>
+
+                <xs:element name="universidade">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="xs:string"/>
+                            <xs:element name="campus" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="dadosaluno">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="xs:string"/>
+                            <xs:element name="matricula" type="xs:string"/>
+
+                            <xs:element name="cpf">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{11}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="curso" type="xs:string" />
+                            <xs:element name="codigocurso" type="xs:string" />
+                            <xs:element name="anoingresso" type="xs:gYear"/>
+                            <xs:element name="cr" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+              
+                <xs:element name="disciplinas">
+                  <xs:complexType>
+                    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                      <xs:element name="disciplina">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="periodo" type="xs:unsignedByte" />
+                                    <xs:element name="codigo" type="xs:string" />
+                                    <xs:element name="credito" type="xs:unsignedByte" />
+                                    <xs:element name="nome" type="xs:string" />
+                                    <xs:element name="nota" type="xs:decimal"/>
+                                    <xs:element name="situacao" type="xs:string" />
+                                            <!--
+                                            <xs:element name="situacao">
+                                                  <xs:simpleType>
+                                                      <xs:restriction base="xs:string">
+                                                          <xs:enumeration value="APR"/>
+                                                          <xs:enumeration value="APRN"/>
+                                                          <xs:enumeration value="CANC"/>
+                                                          <xs:enumeration value="DISP"/>
+                                                          <xs:enumeration value="MATR"/>
+                                                          <xs:enumeration value="REC"/>
+                                                          <xs:enumeration value="REP"/>
+                                                          <xs:enumeration value="REPF"/>
+                                                          <xs:enumeration value="REPMF"/>
+                                                          <xs:enumeration value="REPN"/>
+                                                          <xs:enumeration value="REPNF"/>
+                                                          <xs:enumeration value="TRANC"/>
+                                                          <xs:enumeration value="TRANS"/>
+                                                          <xs:enumeration value="INCORP"/>
+                                                          <xs:enumeration value="CUMP"/>
+                                                      </xs:restriction>
+                                                  </xs:simpleType>
+                                              </xs:element>
+                                              -->
+                                 </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>  
+            </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+</xs:schema>
