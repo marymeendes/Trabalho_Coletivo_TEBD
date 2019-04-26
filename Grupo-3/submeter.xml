@@ -1,0 +1,11 @@
+<requisicao>
+    <metodo>
+        <nome>submeter</nome>
+        <parametros>
+            <parametro>
+                <nome>Boletim</nome>
+                <valor>[String do XML do historico]</valor>
+            </parametro>
+        </parametros>
+    </metodo>
+</requisicao>

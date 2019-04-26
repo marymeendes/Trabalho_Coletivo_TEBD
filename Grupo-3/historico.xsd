@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- definição dos elementos simples -->
+<xs:element name="nome" type="xs:string"/>
+<xs:element name="abreviacao" type="xs:string"/>
+<xs:element name="curso" type="xs:string"/>
+<xs:element name="aluno" type="xs:string"/>
+
+<xs:element name="cpf" type="xs:string"/>
+
+<xs:element name="matricula">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{10}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+<xs:element name="crMedio" type="xs:decimal"/>
+
+<xs:element name="dataGeracao">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="((0[1-9])|([1-2][0-9])|(3[0-1]))/((1[0-2])|([1-9]))/[0-9]{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+<xs:element name="horaGeracao" type="xs:time"/>
+
+<xs:element name="codigoAutenticacao">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(([A-Z0-9]{4}.){9}([A-Z0-9]{4}))"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+<xs:element name="anoSemestre">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{4}-[1,2]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="creditosSolicitados" type="xs:integer"/>
+<xs:element name="creditosAcumulados" type="xs:integer"/>
+<xs:element name="creditosObtidos" type="xs:integer"/>
+<xs:element name="crPeriodo" type="xs:decimal"/>
+<xs:element name="codigo" type="xs:string"/>
+<xs:element name="creditos" type="xs:integer"/>
+<xs:element name="nota" type="xs:decimal"/>
+
+<xs:element name="situacao">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AP"/>
+            <xs:enumeration value="RM"/>
+            <xs:enumeration value="RF"/>
+            <xs:enumeration value="ED"/>
+            <xs:enumeration value="AB"/>
+            <xs:enumeration value="AE"/>
+            <xs:enumeration value="AI"/>
+            <xs:enumeration value="TR"/>
+            <xs:enumeration value="TD"/>
+            <xs:enumeration value="RI"/>
+            <xs:enumeration value="IN"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="situacaoAA">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AC"/>
+            <xs:enumeration value="NC"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<!-- definição dos atributos -->
+<xs:attribute name="categoria"> 
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="obrigatoria"/>
+            <xs:enumeration value="optativa"/>
+            <xs:enumeration value="livre escolha"/>
+            <xs:enumeration value="atividade academica"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:attribute>
+
+<!-- definição dos elementos complexos -->
+<xs:element name="universidade">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="nome"/>
+            <xs:element ref="abreviacao"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Disciplina">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="codigo"/>
+            <xs:element ref="nome"/>
+            <xs:element ref="creditos"/>
+            <xs:element ref="nota"/>
+            <xs:element ref="situacao"/>
+        </xs:sequence>
+        <xs:attribute ref="categoria" use="required"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="AtividadeAcademica">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="codigo"/>
+            <xs:element ref="nome"/>
+            <xs:element ref="creditos"/>
+            <xs:element ref="nota"/>
+            <xs:element ref="situacaoAA"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="disciplinas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="AtividadeAcademica" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Disciplina" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Periodo">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="anoSemestre"/>
+            <xs:element ref="creditosSolicitados"/>
+            <xs:element ref="creditosAcumulados"/>
+            <xs:element ref="creditosObtidos"/>
+            <xs:element ref="crPeriodo"/>
+            <xs:element ref="disciplinas"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="periodos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Periodo" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="HistoricoEscolar">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="universidade"/>
+            <xs:element ref="curso"/>
+            <xs:element ref="aluno"/>
+            <xs:element ref="matricula"/>
+            <xs:element ref="cpf"/>
+            <xs:element ref="crMedio"/>
+            <xs:element ref="dataGeracao"/>
+            <xs:element ref="horaGeracao"/>
+            <xs:element ref="codigoAutenticacao"/>
+            <xs:element ref="periodos"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema> 

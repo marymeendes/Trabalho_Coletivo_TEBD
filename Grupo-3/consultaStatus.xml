@@ -1,0 +1,11 @@
+<requisicao>
+    <metodo>
+        <nome>consultaStatus</nome>
+        <parametros>
+            <parametro>
+                <nome>cpf</nome>
+                <valor>00000000002</valor>
+            </parametro>
+        </parametros>
+    </metodo>
+</requisicao>

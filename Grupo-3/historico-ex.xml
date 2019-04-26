@@ -1,0 +1,97 @@
+<HistoricoEscolar>
+    <universidade>
+        <nome>Universidade Federal Rural do Rio de Janeiro</nome>
+        <abreviacao>UFRRJ</abreviacao>
+    </universidade>
+    <curso>Ciência da Computação</curso>
+    <aluno>Lívia de Azevedo da Silva</aluno>
+    <matricula>2014780348</matricula>
+    <cpf>00000000002</cpf>
+    <crMedio>8.23</crMedio>
+    <dataGeracao>27/12/2018</dataGeracao>
+    <horaGeracao>12:05:35</horaGeracao>
+    <codigoAutenticacao>EED7.DE05.231D.5518.FBCC.7372.E3E0.CBFD.5EE9.28B8</codigoAutenticacao>
+    <periodos>
+        <Periodo>
+            <anoSemestre>2018-1</anoSemestre>
+            <creditosSolicitados>16</creditosSolicitados>
+            <creditosAcumulados>168</creditosAcumulados>
+            <creditosObtidos>16</creditosObtidos>
+            <crPeriodo>8.45</crPeriodo>
+            <disciplinas>
+                <AtividadeAcademica>
+                    <codigo>AB786</codigo>
+                    <nome>LABORATÓRIO DE PROJETO DE SISTEMAS</nome>
+                    <creditos>0</creditos>
+                    <nota>0.0</nota>
+                    <situacaoAA>NC</situacaoAA>
+                </AtividadeAcademica>
+
+                <AtividadeAcademica>
+                    <codigo>AB787</codigo>
+                    <nome>LABORATÓRIO DE COMPUTAÇÃO III</nome>
+                    <creditos>0</creditos>
+                    <nota>1.0</nota>
+                    <situacaoAA>AC</situacaoAA>
+                </AtividadeAcademica>
+
+                <Disciplina categoria = "obrigatoria">
+                    <codigo>IM873</codigo>
+                    <nome>SISTEMAS DISTRIBUÍDOS</nome>
+                    <creditos>4</creditos>
+                    <nota>8.7</nota>
+                    <situacao>AP</situacao>
+                </Disciplina>
+
+                <Disciplina categoria = "obrigatoria">
+                    <codigo>IM877</codigo>
+                    <nome>EMPREENDEDORISMO EM INFORMÁTICA</nome>
+                    <creditos>4</creditos>
+                    <nota>7.7</nota>
+                    <situacao>AP</situacao>
+                </Disciplina>
+
+                <Disciplina categoria = "obrigatoria">
+                    <codigo>TM414</codigo>
+                    <nome>COMPUTAÇÃO III</nome>
+                    <creditos>4</creditos>
+                    <nota>7.4</nota>
+                    <situacao>AP</situacao>
+                </Disciplina>
+
+                <Disciplina categoria = "obrigatoria">
+                    <codigo>TM418</codigo>
+                    <nome>TOP. ESP. EM PROGRAMAÇÃO DE COMPUTADORES</nome>
+                    <creditos>4</creditos>
+                    <nota>10.0</nota>
+                    <situacao>AP</situacao>
+                </Disciplina>
+            </disciplinas>
+        </Periodo>
+        
+        <Periodo>
+            <anoSemestre>2018-2</anoSemestre>
+            <creditosSolicitados>4</creditosSolicitados>
+            <creditosAcumulados>172</creditosAcumulados>
+            <creditosObtidos>4</creditosObtidos>
+            <crPeriodo>9.3</crPeriodo>
+            <disciplinas>
+                <AtividadeAcademica>
+                    <codigo>AB786</codigo>
+                    <nome>LABORATÓRIO DE PROJETO DE SISTEMAS</nome>
+                    <creditos>0</creditos>
+                    <nota>0.0</nota>
+                    <situacaoAA>NC</situacaoAA>
+                </AtividadeAcademica>
+
+                <Disciplina categoria = "optativa">
+                    <codigo>TM431</codigo>
+                    <nome>INTRODUÇÃO À TEORIA DAS REDES DE PETRI</nome>
+                    <creditos>4</creditos>
+                    <nota>9.3</nota>
+                    <situacao>AP</situacao>
+                </Disciplina> 
+            </disciplinas>       
+        </Periodo>
+    </periodos>
+</HistoricoEscolar>
