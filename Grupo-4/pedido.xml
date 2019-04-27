@@ -1,0 +1,9 @@
+<Pedido>
+    <Metodo>getHistorico</Metodo>
+    <Argumentos>
+        <Argumento>
+            <Nome>matricula</Nome>
+            <Valor>2016780485</Valor>
+        </Argumento>
+    </Argumentos>
+</Pedido>

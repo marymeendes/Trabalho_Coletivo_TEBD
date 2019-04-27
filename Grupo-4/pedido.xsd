@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Pedido">
+        <xs:complexType>
+            <xs:all>
+                <xs:element type="xs:string" name="Metodo"/>
+                <xs:element type="ArgumentosType" name="Argumentos"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="ArgumentoType">
+        <xs:all>
+            <xs:element type="xs:string" name="Nome"/>
+            <xs:element type="xs:string" name="Valor"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="ArgumentosType">
+        <xs:sequence>
+            <xs:element type="ArgumentoType" name="Argumento" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>

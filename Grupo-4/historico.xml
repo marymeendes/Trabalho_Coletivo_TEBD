@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HistoricoEscolar>
+    <Aluno>
+        <Nome>Victor Hermann Vasconcelos Chiletto</Nome>
+        <Matricula>2016780485</Matricula>
+        <Curso>Ciência da Computação</Curso>
+    </Aluno>
+    <Periodos>
+        <Periodo>
+            <Nome>2016.1</Nome>
+            <Materias>
+                <Materia>
+                    <Nome>Álgebra Linear 1</Nome>
+                    <Codigo>IM429</Codigo>
+                    <Resultado>7.5</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Computação 1</Nome>
+                    <Codigo>TM422</Codigo>
+                    <Resultado>10.0</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Geometria Analítica</Nome>
+                    <Codigo>IM885</Codigo>
+                    <Resultado>7.0</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Introdução à Ciência da Computação</Nome>
+                    <Codigo>TM404</Codigo>
+                    <Resultado>7.0</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Laboratório de Computação 1</Nome>
+                    <Codigo>AA783</Codigo>
+                    <Resultado>0.0</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Matemática Discreta para Computação</Nome>
+                    <Codigo>TM403</Codigo>
+                    <Resultado>6.8</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Métodos Universitários</Nome>
+                    <Codigo>AA784</Codigo>
+                    <Resultado>0.0</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+            </Materias>
+        </Periodo>
+        <Periodo>
+            <Nome>2016.2</Nome>
+            <Materias>
+                <Materia>
+                    <Nome>Álgebra Linear Computacional</Nome>
+                    <Codigo>IM478</Codigo>
+                    <Resultado>8.0</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Cálculo 1</Nome>
+                    <Codigo>IM403</Codigo>
+                    <Resultado>5.8</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Circuitos Digitais</Nome>
+                    <Codigo>IM853</Codigo>
+                    <Resultado>5.7</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Computação II</Nome>
+                    <Codigo>TM423</Codigo>
+                    <Resultado>7.5</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Fundamentos de Sistemas</Nome>
+                    <Codigo>IM899</Codigo>
+                    <Resultado>5.2</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Laboratório de Circuitos Digitais</Nome>
+                    <Codigo>AA786</Codigo>
+                    <Resultado>0.0</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+                <Materia>
+                    <Nome>Laboratório de Computação II</Nome>
+                    <Codigo>AA785</Codigo>
+                    <Resultado>0.0</Resultado>
+                    <Situacao>Aprovado</Situacao>
+                </Materia>
+            </Materias>
+        </Periodo>
+    </Periodos>
+</HistoricoEscolar>

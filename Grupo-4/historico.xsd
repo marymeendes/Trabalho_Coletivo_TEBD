@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="HistoricoEscolar">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Aluno" type="AlunoType" minOccurs="1"/>
+                <xs:element name="Periodos" type="PeriodosType" minOccurs="1"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="AlunoType">
+        <xs:all>
+            <xs:element name="Nome" type="xs:string" minOccurs="1"/>
+            <xs:element name="Matricula" type="xs:string" minOccurs="1"/>
+            <xs:element name="Curso" type="xs:string" minOccurs="1"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="PeriodosType">
+        <xs:sequence>
+            <xs:element name="Periodo" type="PeriodoType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PeriodoType">
+        <xs:all>
+            <xs:element name="Nome" type="xs:string" minOccurs="1"/>
+            <xs:element name="Materias" type="MateriasType" minOccurs="1"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="MateriasType">
+        <xs:sequence>
+            <xs:element name="Materia" type="MateriaType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="MateriaType">
+        <xs:all>
+            <xs:element name="Nome" type="xs:string" minOccurs="1"/>
+            <xs:element name="Codigo" type="xs:string" minOccurs="1"/>
+            <xs:element name="Resultado" type="xs:decimal" minOccurs="1"/>
+            <xs:element name="Situacao" type="xs:string" minOccurs="1"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>
